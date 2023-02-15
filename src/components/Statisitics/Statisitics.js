@@ -1,13 +1,17 @@
+import {useTranslation} from "react-i18next";
+
 /**
  * Компонента по выводу статистики
- * @param listPosts переменная состояния, в которой хранятся посты
- * @param count переменная состояния, в который хранится значение постов за все время
+ * @param listTasks переменная состояния, в которой хранятся задачи
+ * @param count переменная состояния, в который хранится значение задач за все время
  */
-export const Statistics = ({ listPosts, count }) => {
+export const Statistics = ({listTasks, count}) => {
+    const [t] = useTranslation();
+
     return (
         <div>
-            <h2> Количество постов за все время: {count}</h2>
-            <h2> Количество постов сейчас: {listPosts.length}</h2>
+            <h2> {t('contTaskAllTime')}: {count}</h2>
+            <h2> {t('contTaskNow')}: {listTasks.length}</h2>
         </div>
     )
 }

@@ -1,0 +1,51 @@
+.task {
+    border: 1px solid black;
+    max-width: 60%;
+    margin: 15px auto;
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: 1fr 200px;
+    justify-items: start;
+    align-items: center;
+}
+
+.titlePerson {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 15px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.genderPerson {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.messagePerson {
+    font-size: 16px;
+    text-align: left;
+    padding: 0 15px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.btnDelTask {
+    padding: 0 15px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.btnDelTask:hover {
+    box-shadow: 2px 2px 8px black, 6px 6px 8px black;
+}

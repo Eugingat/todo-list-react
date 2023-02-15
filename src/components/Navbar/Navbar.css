@@ -1,0 +1,64 @@
+.none {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    background-color: rgba(206, 198, 198, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+.navbar {
+    opacity: 1;
+    width: 100%;
+}
+
+aside {
+    background: white;
+    border-right: 1px solid black;
+    max-width: 250px;
+    height: 100%;
+    margin-top: -16px;
+    margin-left: -250px;
+    transition-duration: 1s;
+}
+
+.openMenu {
+    margin-left: 0px;
+    transition-duration: 1s;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    width: 80%;
+    transition-duration: 1s;
+}
+
+.white-li {
+    color: black;
+    background: white;
+}
+
+.dark-li {
+    color: white;
+    background: black;
+    border-color: white;
+}
+
